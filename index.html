@@ -1,67 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ee7479fa1f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Form - Login/Logout</title>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <div class="container">
-        <form class="signup">
-            <h2>
-                Registrate
-            </h2>
-            <div class="container-input">
-                <label for="signup-name">Nombre de usuario</label>
-                <input type="text" id="signup-name" required>
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="container-input">
-                <label for="signup-email">Dirección de Email</label>
-                <input type="email" id="signup-email" required>
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="container-input">
-                <label for="signup-password">Crea una contraseña</label>
-                <input type="text" id="signup-password" required>
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="container-input">
-                <label for="confirm-password">Confirma la contraseña</label>
-                <input type="text" id="confirm-password" required>
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="container-input">
-                <input type="submit" value="Crea una cuenta">
-            </div>
-            <p>
-                Ya tengo una cuenta <a href="#">Iniciar sesión</a>
-            </p>
-        </form>
-        <form class="signin">
-            <h2>
-                Iniciar sesión
-            </h2>
-            <div class="container-input">
-                <label for="signin-name">Nombre de usuario</label>
-                <input type="text" id="signin-name" required>
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="container-input">
-                <label for="signin-password">contraseña</label>
-                <input type="password" id="signin-password" required>
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="container-input">
-                <input type="submit" value="Iniciar sesión">
-            </div>
-            <p>No tengo una cuenta <a href="#">Registrate</a></p>
-        </form>
+        <div class="login-content">
+            <form action="index.html">
+                <img src="img/logoAvatar.png">
+                <h2 class="title">Bienvenid@s</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Nombre de usuario</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Contraseña</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
     </div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
