@@ -7,6 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+	background-image: linear-gradient(to bottom right, #000000, #39025c);
 }
 
 .wave{
@@ -15,6 +16,33 @@ body{
 	left: 0;
 	height: 100%;
 	z-index: -1;
+}
+
+.description{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.description h1{
+	text-align: center;
+	font-family: monospace;
+	margin: 15px 0;
+	color: #d0c6c6;
+	/* text-transform: uppercase; */
+	font-size: 3rem;
+}
+
+.description p{
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 100;
+	margin: 15px 0;
+	color: #d0c6c6;
+	/* text-transform: uppercase; */
+	font-size: 1.5rem;
 }
 
 .container{
@@ -39,10 +67,6 @@ body{
 	text-align: center;
 }
 
-.img img{
-	width: 500px;
-}
-
 form{
 	width: 360px;
 }
@@ -53,9 +77,12 @@ form{
 
 .login-content h2{
 	margin: 15px 0;
-	color: #333;
-	text-transform: uppercase;
+	color: #d0c6c6;
+	/* text-transform: uppercase; */
 	font-size: 2.9rem;
+}
+.login-content h2>span{
+	color: #0c86c8;
 }
 
 .login-content .input-div{
@@ -103,7 +130,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #38d39f;
+	background-color: #0c86c8;
 	transition: .4s;
 }
 
@@ -125,7 +152,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #38d39f;
+	color: #0c86c8;
 }
 
 .input-div > div > input{
@@ -157,7 +184,7 @@ a{
 }
 
 a:hover{
-	color: #38d39f;
+	color: #53aad9;
 }
 
 .btn{
@@ -167,7 +194,7 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, black ,#0c86c8, black);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
@@ -178,7 +205,8 @@ a:hover{
 	transition: .5s;
 }
 .btn:hover{
-	background-position: right;
+	background-position:right;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -208,7 +236,7 @@ a:hover{
 		grid-template-columns: 1fr;
 	}
 
-	.img{
+	.description{
 		display: none;
 	}
 
