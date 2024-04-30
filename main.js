@@ -16,7 +16,3 @@ inputs.forEach((input) => {
   input.addEventListener("focus", addcl);
   input.addEventListener("blur", remcl);
 });
-
-const span = document.querySelectorAll(".span");
-
-function visible() {}

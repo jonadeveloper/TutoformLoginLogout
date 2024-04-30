@@ -7,7 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-	background-image: linear-gradient(to bottom right, #000000, #39025c);
+	background-image: linear-gradient(to bottom right, #000000, #14192D);
 }
 
 .container{
@@ -34,14 +34,14 @@ form{
 
 .login-content img{
     height: 100px;
-	animation: mover-opacificar 1s linear forwards;
+	animation: mover-opacificar 2s linear forwards;
 }
 
 .login-content h2{
 	margin: 15px 0;
 	color: #d0c6c6;
 	font-size: 2.9rem;
-	animation: mover-opacificar 1s linear forwards;
+	animation: mover-opacificar 2s linear forwards;
 }
 .span{
   background-image: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #a818a8, #9228d8, #7a3dd8, #6d4edc); /* Gradiente de colores */
