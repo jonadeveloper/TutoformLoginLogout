@@ -30,7 +30,7 @@ body{
 	text-align: center;
 	font-family: monospace;
 	margin: 15px 0;
-	color: #d0c6c6;
+	color: #ffff;
 	/* text-transform: uppercase; */
 	font-size: 3rem;
 }
@@ -40,7 +40,7 @@ body{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 100;
 	margin: 15px 0;
-	color: #d0c6c6;
+	color: #f9f9f9;
 	/* text-transform: uppercase; */
 	font-size: 1.5rem;
 }
@@ -48,10 +48,10 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem;
-    padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .img{
@@ -62,12 +62,14 @@ body{
 
 .login-content{
 	display: flex;
+	width: 75%;
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
 }
 
 form{
+	margin: 0 auto;
 	width: 360px;
 }
 
@@ -82,7 +84,10 @@ form{
 	font-size: 2.9rem;
 }
 .login-content h2>span{
-	color: #0c86c8;
+  background-image: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #a818a8, #9228d8, #7a3dd8, #6d4edc); /* Gradiente de colores */
+  -webkit-background-clip: text; /* Para aplicar el gradiente en el texto */
+  background-clip: text;
+  color: transparent; 
 }
 
 .login-content .input-div{
@@ -207,44 +212,4 @@ a:hover{
 .btn:hover{
 	background-position:right;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-@media screen and (max-width: 1050px){
-	.container{
-		grid-gap: 5rem;
-	}
-}
-
-@media screen and (max-width: 1000px){
-	form{
-		width: 290px;
-	}
-
-	.login-content h2{
-        font-size: 2.4rem;
-        margin: 8px 0;
-	}
-
-	.img img{
-		width: 400px;
-	}
-}
-
-@media screen and (max-width: 900px){
-	.container{
-		grid-template-columns: 1fr;
-	}
-
-	.description{
-		display: none;
-	}
-
-	.wave{
-		display: none;
-	}
-
-	.login-content{
-		justify-content: center;
-	}
 }
