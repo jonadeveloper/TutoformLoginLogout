@@ -10,53 +10,12 @@ body{
 	background-image: linear-gradient(to bottom right, #000000, #39025c);
 }
 
-.wave{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	z-index: -1;
-}
-
-.description{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.description h1{
-	text-align: center;
-	font-family: monospace;
-	margin: 15px 0;
-	color: #ffff;
-	/* text-transform: uppercase; */
-	font-size: 3rem;
-}
-
-.description p{
-	text-align: center;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 100;
-	margin: 15px 0;
-	color: #f9f9f9;
-	/* text-transform: uppercase; */
-	font-size: 1.5rem;
-}
-
 .container{
-    width: 100vw;
+	width: 100vw;
     height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-}
-
-.img{
-	display: flex;
-	justify-content: flex-end;
 	align-items: center;
 }
 
@@ -75,15 +34,16 @@ form{
 
 .login-content img{
     height: 100px;
+	animation: mover-opacificar 1s linear forwards;
 }
 
 .login-content h2{
 	margin: 15px 0;
 	color: #d0c6c6;
-	/* text-transform: uppercase; */
 	font-size: 2.9rem;
+	animation: mover-opacificar 1s linear forwards;
 }
-.login-content h2>span{
+.span{
   background-image: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #a818a8, #9228d8, #7a3dd8, #6d4edc); /* Gradiente de colores */
   -webkit-background-clip: text; /* Para aplicar el gradiente en el texto */
   background-clip: text;
@@ -212,4 +172,19 @@ a:hover{
 .btn:hover{
 	background-position:right;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes mover-opacificar {
+	0% {
+	left: 0; 
+	opacity: 0; 
+	transform: translateY(-100%);	}
+	50% {
+	left: 50%; 
+	opacity: 0.5;
+	}
+	100% {
+	left: 100%;
+	opacity: 1;
+	}
 }
