@@ -267,3 +267,9 @@ inputs.forEach((input) => {
 });
 
 ```
+
+<h3>Si seguiste todos los pasos este deberia ser el resultado</h3>
+
+https://github.com/jonadeveloper/TutoformLoginLogout/assets/59519580/adfcec88-71b1-4067-99a4-c1f130c1c2f2
+
+
